@@ -1,4 +1,4 @@
-Some issues :
+## Some issues :
 
 -   test coverage is about 70%
 -   shuffling symbols instead of scrolling wheels
