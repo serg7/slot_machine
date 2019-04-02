@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+        'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.slot-machine {
+    position: relative;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    padding-top: 100px;
+    border: 1px solid #ccc;
+}
+
+.wheels {
+    display: flex;
+    height: 70%;
+    width: 80%;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #ccc;
+}
+
+.wheel {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 20%;
+    margin: auto;
+    border: 1px solid #adadad;
+}
+
+.symbol {
+    width: 70%;
+    height: 50px;
+    margin: auto;
+    border: 1px solid #ccc;
+    background-size: 100% 100%;
+}
+
+.symbol img {
+    width: 100%;
+    height: 100%;
+}
+
+.symbol--strawberry {
+    background-image: url('./img/strawberry.png');
+}
+
+.symbol--orange {
+    background-image: url('./img/orange.png');
+}
+
+.symbol--banana {
+    background-image: url('./img/banana.png');
+}
+
+.symbol--monkey {
+    background-image: url('./img/monkey.png');
+}
+
+.result {
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    bottom: 10px;
+    color: white;
+    text-align: center;
+    background: orange;
+}
+
+.result.hide {
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 192px;
+    width: 100%;
+    height: 60px;
+    border-top: 5px solid #ccc;
+    border-bottom: 5px solid #ccc;
+    opacity: 0.5;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    height: 10%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+.buttons button {
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    border-radius: 2px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    padding: 0.5em 1em;
+    border: transparent;
+    text-decoration: none;
+}
+
+.buttons .btn-start {
+    background: rgb(28, 184, 65);
+}
+
+.buttons .btn-stop {
+    background: rgb(202, 60, 60);
+}
