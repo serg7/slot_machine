@@ -1,3 +1,9 @@
+Some issues :
+
+-   test coverage is about 70%
+-   shuffling symbols instead of scrolling wheels
+-   symbols change every 300 ms (not 50ms)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
